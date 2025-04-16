@@ -1,0 +1,30 @@
+LIBRARY  = math
+
+! ! ! S P E C I F I C A T I O N ! ! !
+! ! ! S P E C I F I C A T I O N ! ! !
+! ! ! S P E C I F I C A T I O N ! ! !
+! ! ! S P E C I F I C A T I O N ! ! !
+! ! ! S P E C I F I C A T I O N ! ! !
+1. math.pi
+   šis ir vienkārši pi ko lieto trigonometrijā un apļos utt.
+   pi ir apmēram 3.141592653589793238462643383...    (es šitik skaitļus no galvas iemācijos :P)
+
+2. math.e
+    eilera skaitlis ko lieto logaritmu un exponentu lietās diezgan bieži un apmēram ir 2.718281828...
+
+3. math.sqrt(x)
+    kvadrātsakne
+    nezinu ko vēl te vajag teikt (preety self explanitory)
+    x vietā ievada skaitli no kā vilk kvadrātsakni
+
+4. math.factorial(x)
+    faktoriālis, atkal diezgan pašsaprotami.
+    x vietā ievada skaitli no kā vajag rēķināt faktoriāli
+
+5. math.pow(x, y)
+    pakāpes funkcija.  x ir skaitlis un y ir kāpinātājs
+    izvada skaitli x, y pakāpē
+
+6. math.log(x, base)
+    logaritms, x ir skaitlis no kā velk, base ir logaritma bāze
+   !!! jā bāze nav norādīta, tad automātiski pieņems ka tas ir naturālais logaritms (bāze ir e (skaidrojums par e atrodams 7. rindiņā))!!!
