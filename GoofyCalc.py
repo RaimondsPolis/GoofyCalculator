@@ -18,6 +18,11 @@ def clear():
     entry.delete(0, tk.END)
     adjust_entry_width() 
 
+def backspace():
+    if entry.get():  # Check if the entry is not empty
+        entry.delete(len(entry.get())-1, tk.END)
+        adjust_entry_width()  # Update width after deletion
+
 def adjust_entry_width():# lai nebūtu par maz vietas
     content_length = len(entry.get())
     new_width = max(20, content_length)  # Minimum width is 20
@@ -50,7 +55,7 @@ entry.grid(row=0, column=0, columnspan=4)
 buttons = [
     ('7', 1, 0), ('8', 1, 1), ('9', 1, 2), ('/', 1, 3), ('(', 1, 4),(')', 1, 5),
     ('4', 2, 0), ('5', 2, 1), ('6', 2, 2), ('*', 2, 3), ('x²', 2, 4),('x³', 2, 5),
-    ('1', 3, 0), ('2', 3, 1), ('3', 3, 2), ('-', 3, 3),
+    ('1', 3, 0), ('2', 3, 1), ('3', 3, 2), ('-', 3, 3),('⌫', 3, 4),
     ('C', 4, 0), ('0', 4, 1), ('=', 4, 2), ('+', 4, 3),
 ]
 
@@ -59,6 +64,8 @@ for (text, row, col) in buttons:
         btn = tk.Button(root, text=text, padx=20, pady=20, font=("Arial", 14), command=calculate)
     elif text == "C":
         btn = tk.Button(root, text=text, padx=20, pady=20, font=("Arial", 14), command=clear)
+    elif text == "⌫":
+        btn = tk.Button(root, text=text, padx=20, pady=20, font=("Arial", 14), command=backspace)
     else:
         btn = tk.Button(root, text=text, padx=20, pady=20, font=("Arial", 14), command=lambda t=text: press(t))
     btn.grid(row=row, column=col)
