@@ -9,7 +9,7 @@ LIBRARY  = math
 
 1. math.pi
    šis ir vienkārši pi ko lieto trigonometrijā un apļos utt.
-   pi ir apmēram 3.141592653589793238462643383...    (es šitik skaitļus no galvas iemācijos :P)
+   pi ir apmēram 3.141592653589793238462643383...
 
 2. math.e
     eilera skaitlis, ko lieto logaritmu un exponentu lietās diezgan bieži un apmēram ir 2.718281828...
