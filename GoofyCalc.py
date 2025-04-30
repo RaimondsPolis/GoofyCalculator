@@ -3,6 +3,8 @@ from tkinter import messagebox
 
 import re
 
+from playsound import playsound as playsound
+
 import random
 
 def press(key):
@@ -38,6 +40,7 @@ def calculate():#complex aprēķini lol
         rezultats = round(rezultats, 10)  # noapaļo līdz 10 cipariem aiz komata
         if random.randint(0, 100) < 5 or rezultats > 100000:
             rezultats = "Hello World!"
+            playsound("WxpError.mp3")
         entry.delete(0, tk.END)
         entry.insert(tk.END, str(rezultats))
     except Exception as e:
